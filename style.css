@@ -21,21 +21,26 @@ main {
 .header {
   background: url('./images/train.jpg') no-repeat center; 
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   position: relative;
 }
 
-.header div:first-of-type {
+.logo-wrapper {
+  height: 330px;
+  display: flex;
+}
+
+.header > div > div {
   background-color: #000000ab;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  align-self: flex-end;
+  width: 100%;
 }
 
-.header div:last-of-type {
+.header > div:last-of-type {
   width: 100%;
   position: absolute;
   bottom: 0;
