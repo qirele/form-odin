@@ -2,7 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header a {
+  display: block;
+  color: #5c381e;
+}
+
+header span{
+  text-decoration: underline;
 }
 
 body {
@@ -15,11 +28,15 @@ body > * {
 }
 
 main {
-  flex: 2 1 0px; 
+  flex: 2 1 0px;
+}
+
+main .container {
+  margin-left: 60px;
 }
 
 .header {
-  background: url('./images/train.jpg') no-repeat center; 
+  background: url("./images/train.jpg") no-repeat center;
   min-height: 100vh;
   position: relative;
 }
@@ -29,7 +46,7 @@ main {
   display: flex;
 }
 
-.header > div > div {
+.logo-wrapper div {
   background-color: #000000ab;
   color: white;
   display: flex;
@@ -38,6 +55,12 @@ main {
 
   align-self: flex-end;
   width: 100%;
+  padding: 15px 0 15px 0;
+}
+
+.logo-wrapper h1 {
+  font-stretch: ultra-expanded;
+  font-size: 1rem;
 }
 
 .header > div:last-of-type {
@@ -45,9 +68,83 @@ main {
   position: absolute;
   bottom: 0;
   text-align: center;
-
 }
 
 .header img {
   max-height: 100px;
+}
+
+.hero-text {
+  margin: 140px 20px 60px 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+  /* max-width: 50ch; */
+  max-width: 625px;
+}
+
+.hero-text p:last-of-type {
+  margin: 40px 0 0 0;
+}
+
+.form {
+  max-width: 600px;
+}
+
+.form-wrapper h2 {
+  margin: 0 0 20px 0;
+}
+
+.form-row {
+  display: flex;
+  gap: 60px;
+  margin: 0 0 20px 0;
+}
+
+.form-row:last-child {
+  margin: 0;
+}
+
+.form-row div {
+  flex: 1;
+}
+
+.form-row div label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: #3e3e3e;
+  letter-spacing: 2px;
+}
+
+.form-row input {
+  padding: 5px 10px 5px 10px;
+  width: 100%;
+  appearance: none;
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 5px;
+}
+
+.line {
+  box-shadow: 0 10px 16px -10px rgb(150, 150, 150);
+  height: 30px;
+  width: 100%;
+}
+
+.bottom {
+  margin: 50px 0 0 0;
+}
+
+.bottom button {
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  background-color: #5c381e;
+  color: white;
+  font-size: 1.15rem;
+  margin: 0 0 35px 0;
+}
+
+
+.bottom a {
+  color: #b19564;
 }

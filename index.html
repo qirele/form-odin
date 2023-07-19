@@ -4,9 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <title>Form</title>
   </head>
@@ -19,54 +24,57 @@
         </div>
       </div>
       <div>
-        <a href="https://unsplash.com/photos/umRPY9w3q1c">Photo by Sawyer Bengtson</a>
+        <a href="https://unsplash.com/photos/umRPY9w3q1c"
+          >Photo by <span>Sawyer Bengtson</span></a
+        >
       </div>
     </header>
     <main>
-      <section class="hero-text">
-        <h2>
-          Lorem ipsum dolor sit adipisicing elit. Atque numquam inventore corrupti ad at eum, harum rem libero
-          delectus earum similique?
-          <em>Atque</em>
-          , pariatur.
-        </h2>
-        <h2>
-          You
-          <em>know</em>
-          you want to
-        </h2>
+      <section class="hero-text container">
+        <p>
+          This is not real online service! You know you need something like this
+          in your life to help you realize your deepest dreams.
+        </p>
+        <p>Sign up <em>now</em> to get started.</p>
+        <p>You <em>know</em> you want to.</p>
       </section>
-      <section class="form-wrapper">
+      <section class="form-wrapper container">
         <h2>Let's do this!</h2>
         <form class="form">
-          <div>
-            <label for="firstName">First name</label>
-            <input type="text" id="firstName" name="firstName" />
+          <div class="form-row">
+            <div>
+              <label for="firstName">First name</label>
+              <input type="text" id="firstName" name="firstName" />
+            </div>
+            <div>
+              <label for="lastName">Last name</label>
+              <input type="text" id="lastName" name="lastName" />
+            </div>
           </div>
-          <div>
-            <label for="lastName">Last name</label>
-            <input type="text" id="lastName" name="lastName" />
+          <div class="form-row">
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div>
+              <label for="tel">Phone number</label>
+              <input type="tel" id="tel" name="tel" />
+            </div>
           </div>
-          <div>
-            <label for="email">Last name</label>
-            <input type="email" id="email" name="email" />
-          </div>
-          <div>
-            <label for="tel">Phone number</label>
-            <input type="tel" id="tel" name="tel" />
-          </div>
-          <div>
-            <label for="password1">Password</label>
-            <input type="text" id="password1" name="password1" />
-          </div>
-          <div>
-            <label for="password2">Confirm password</label>
-            <input type="text" id="password2" name="password2" />
+          <div class="form-row">
+            <div>
+              <label for="password1">Password</label>
+              <input type="text" id="password1" name="password1" />
+            </div>
+            <div>
+              <label for="password2">Confirm password</label>
+              <input type="text" id="password2" name="password2" />
+            </div>
           </div>
         </form>
       </section>
-
-      <section class="bottom">
+      <div class="line"></div>
+      <section class="bottom container">
         <button>Create Account</button>
         <p>
           Already have an account?
