@@ -151,10 +151,24 @@ main .container {
   color: white;
   font-size: 1.15rem;
   margin: 0 0 35px 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.bottom button:hover, .bottom button:focus {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+  background-color: #2b2200;
 }
 
 .bottom a {
+  display: inline-block;
   color: #b19564;
+  transition: all 0.1s ease-in;
+}
+
+.bottom a:hover, .bottom a:focus {
+  color: #c16d00;
+  text-decoration: underline;
 }
 
 .password1-wrapper {
